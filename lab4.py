@@ -34,3 +34,5 @@ class MRMostUsedWord(MRJob):
         # each item of word_count_pairs is (count, word),
         # so yielding one results in key=counts, value=word
         yield max(word_count_pairs)
+if __name__ == '__main__':
+    MRMostUsedWord.run()

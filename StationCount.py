@@ -1,4 +1,4 @@
-import mapreduce as mr
+
 from mrjob.job import MRJob
 class MRStationCount(MRJob):
   def mapper(self, _, line):
